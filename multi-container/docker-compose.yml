@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  mysql-1:
+    image: mysql:latest
+    ports:
+      - "33061:33061"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
+  mysql-2:
+    image: mysql:latest
+    ports:
+      - "33062:33062"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+
+  mysql-3:
+    image: mysql:latest
+    ports:
+      - "33063:33063"
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
